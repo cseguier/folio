@@ -25,20 +25,3 @@ div.bodyContainer {
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-a.arc-dev {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-  height: fit-content;
-  width: fit-content;
-  padding: 10px 30px 10px 30px;
-  border: 3px solid black;
-  color: black;
-  transition: font-weight 1s, background-color 5s;
-  border-left: none;
-  border-right: none;
-  text-decoration: none;
-  text-align: center;
-  background-size: 400% 400%;
-}

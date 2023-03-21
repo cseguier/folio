@@ -5,19 +5,19 @@ a.arc {
     height: fit-content;
     width: fit-content;
     padding: 10px 30px 10px 30px;
-    border: 3px solid black;
+    border: 1px solid black;
     color: black;
-    transition: font-weight 1s, background-color 5s;
+    transition: font-weight .5s, box-shadow .5s, border 1s, border-radius 2s;
     border-left: none;
     border-right: none;
     text-decoration: none;
     text-align: center;
     background-size: 400% 400%;
 
-    -webkit-animation: pulse 3s ease-out infinite, rainbow 28s linear infinite;
-    -z-animation: pulse 3s ease-out infinite, rainbow 28s linear infinite;
-    -o-animation: pulse 3s ease-out infinite, rainbow 28s linear infinite;
-    animation: pulse 3s ease-out infinite, rainbow 28s linear infinite;
+    -webkit-animation: rainbow 28s linear infinite;
+    -z-animation: rainbow 28s linear infinite;
+    -o-animation: rainbow 28s linear infinite;
+    animation: rainbow 28s linear infinite;
 }
 
 a.arc:before {
@@ -40,76 +40,11 @@ a.arc:before {
 }
 
 a.arc:hover {
-    background-color: black;
+    box-shadow: rgb(255, 255, 255, 0.3) 0 0 0 1px;
+    text-shadow: rgb(255, 255, 255, 1) 10px 10px 10px 10px;
+    border: 3px solid;
+    border-radius: 30px;
     font-weight: 900;
-}
-
-@-webkit-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-}
-
-@-moz-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-}
-
-@-o-keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-}
-
-@keyframes pulse {
-    0% {
-        box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.3);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    70% {
-        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
-
-    100% {
-        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-        clip-path: inset(-15px 0px -15px 0px);
-    }
 }
 
 

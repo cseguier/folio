@@ -9,8 +9,8 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={camo} className="App-logo-dev" alt="logo" />
-        {/* <img src={camo} className="App-logo" alt="logo" /> */}
+        {/* <img src={camo} className="App-logo-dev" alt="logo" /> */}
+        <img src={camo} className="App-logo" alt="logo" />
       </header>
 
       <div className='bodyContainer'>
@@ -19,8 +19,8 @@ function App() {
         </p>
 
         <p>
-          <a className="arc-dev" href={cv} download>
-            {/* <a className="arc" href={cv} download>*/}
+          {/* <a className="arc-dev" href={cv} download> */}
+          <a className="arc" href={cv} download="cseguier_resume">
             Download my Resumey
           </a>
         </p>
